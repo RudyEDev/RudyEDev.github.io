@@ -1,0 +1,63 @@
+body {
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    color: #007bff;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .btn-primary:focus,
+  .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .message-container {
+    position: relative;
+    padding-top: 30px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  .message-box .message {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end);
+  }
+  
+  .message-box .message::after {
+    content: "|";
+    display: inline;
+    animation: blinking 0.7s infinite;
+  }
+  
+  @keyframes blinking {
+    50% {
+      opacity: 0;
+    }
+  }
+  

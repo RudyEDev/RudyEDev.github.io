@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frases Progr.</title>
+  <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card shadow" id="formCard">
+          <div class="card-body">
+            <h3 class="card-title text-center">Bienvenido</h3>
+            <form>
+              <div class="form-group">
+                <label for="nameInput">Nombre:</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary px-5" onclick="showMessage()">Mostrar mensaje</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="message-container text-center d-none" id="messageContainer">
+          <div class="card shadow message-box animate__animated animate__fadeInDown">
+            <div class="card-body">
+              <div class="message" id="message"></div>
+              <div class="text-center mt-3">
+                <i class="fas fa-heart text-danger fa-3x animate__animated animate__heartBeat animate__repeat-3"></i>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary px-4" onclick="resetForm()">Volver</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.14/dist/sweetalert2.all.min.js"></script>
+  <script src="codigo.js"></script>
+</body>
+</html>
